@@ -20,6 +20,7 @@ var _socket = require("./socket/socket.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+// routes
 var PORT = process.env.PORT || 5000;
 
 var _dirname = _path["default"].resolve();
