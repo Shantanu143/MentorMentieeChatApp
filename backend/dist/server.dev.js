@@ -38,7 +38,7 @@ _socket.app.use("/api/messages", _messageRoutes["default"]);
 
 _socket.app.use("/api/users", _userRoutes["default"]);
 
-_socket.app.use(_express["default"]["static"](_path["default"].join(_dirname, "/frontend/dist")));
+_socket.app.use(_express["default"]["static"](_path["default"].join(_dirname, "../frontend/dist")));
 
 _socket.app.get("*", function (req, res) {
   res.sendFile(_path["default"].join(_dirname, "frontend", "dist", "index.html"));
